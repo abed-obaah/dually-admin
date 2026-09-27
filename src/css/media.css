@@ -14,12 +14,48 @@
   .header .fa-bars-staggered {
     display: block;
   }
+  .layout-wrapper {
+    padding: 12px;
+    gap: 12px;
+  }
+  .header .search-container {
+    display: none;
+  }
+  .header {
+    padding: 10px 14px;
+    border-radius: 20px;
+  }
+  .dashboard-card {
+    max-width: 100%;
+  }
+  .update-profile-section {
+    padding: 20px;
+  }
+  .user-profile-section .edit-section {
+    width: 100%;
+  }
+  .request-box {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 /* Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
+  .layout-wrapper {
+    padding: 10px;
+    gap: 0;
+  }
+  .layout-wrapper .layout-content {
+    width: 100%;
+    min-width: 0;
+  }
+  .child-component-wrapper {
+    padding: 12px 0;
+  }
   .dashboard-card {
     max-width: 100%;
+    width: 100%;
   }
   .update-profile-section form .multiple-inputs {
     flex-direction: column;
@@ -28,10 +64,27 @@
     width: 100%;
   }
   .update-profile-section {
-    padding: 20px;
+    padding: 14px;
   }
-  .layout-wrapper .layout-content {
+  .user-profile-section .edit-section {
     width: 100%;
+    margin: 0;
+  }
+  .user-profile-section {
+    gap: 14px;
+  }
+  .request-box {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .friend-request-data-container .head .search-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .friend-request-tabs {
+    max-width: 100%;
   }
   table thead tr th,
   table tbody tr td,
@@ -52,12 +105,12 @@
   .update-profile-section form .submit-btn,
   .update-profile-section form .input-div select,
   .css-1jqq78o-placeholder,
-  .friend-request-data-container .head .search-container input ,
-  .request-box .content p.title ,
-  .request-box .content p.date ,
-  .request-box .action-btn button.view ,
-  .terms-condition-container .value-container p.label ,
-  .terms-condition-container .value-container p.value{
+  .friend-request-data-container .head .search-container input,
+  .request-box .content p.title,
+  .request-box .content p.date,
+  .request-box .action-btn button.view,
+  .terms-condition-container .value-container p.label,
+  .terms-condition-container .value-container p.value {
     font-size: var(--font-size-xs-small);
   }
   .section-heading,
@@ -76,9 +129,6 @@
     line-height: 25px;
     font-size: var(--font-size-xs-small);
   }
-  .user-profile-section .edit-section {
-    margin: auto;
-  }
   .user-profile-section .edit-section .img-container img,
   .update-profile-section .update-img img {
     width: 80px;
@@ -89,17 +139,86 @@
     width: 160px;
   }
   .update-profile-section .update-img {
-    gap: 20px;
+    gap: 16px;
   }
-  .request-box{
-    justify-content: space-between;
-    gap: 20px;
+  .edit-help-support-mod .flexbox-container .input-div {
+    width: 100%;
   }
-  .friend-request-data-container .head .search-container{
+  .table-layout {
+    padding: 14px;
+  }
+  .table-layout .filter-section {
+    gap: 12px;
+  }
+  .table-layout .filter-section .content {
+    gap: 10px;
+    width: 100%;
+  }
+  .table-layout .filter-section .content .search-container {
     max-width: 100%;
-    width: 100%;
   }
-  .edit-help-support-mod .flexbox-container .input-div{
-    width: 100%;
+  .space-bg {
+    padding: 14px;
   }
+  .header {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  .header .header-actions {
+    gap: 8px;
+  }
+  .update-profile-section form .submit-btn {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Bar (offcanvas sidebar) admin detail */
+.sidebar .admin-detail .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar .admin-detail .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--auth-light);
+  border: 2px solid var(--auth-border);
+}
+
+.sidebar .admin-detail .profile p {
+  margin: 0;
+}
+
+.sidebar .admin-detail .profile .name {
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  color: var(--auth-navy);
+}
+
+.sidebar .admin-detail .profile .admin-badge {
+  font-size: var(--font-size-xs-small);
+  color: var(--auth-primary);
+  font-weight: 600;
+}
+
+.sidebar .admin-detail .log-out {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 0;
+  color: #ee5d50;
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  border: none;
+  background: transparent;
+}
+
+.sidebar .admin-detail .log-out p {
+  margin: 0;
 }

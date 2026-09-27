@@ -35,10 +35,10 @@ const MobileBar = ({ show, handleClose }) => {
             {sidebarLinks.map((i, index) => (
               <div
                 className={`item ${pathname === i.link ? "active" : ""}`}
-                onClick={() => navigate(i.link)}
+                onClick={() => { navigate(i.link); handleClose(); }}
                 key={index}
               >
-                <img src={i.img} alt="" />
+                <i className={i.icon}></i>
 
                 <p> {i.title} </p>
               </div>
