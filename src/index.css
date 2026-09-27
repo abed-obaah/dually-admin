@@ -1,0 +1,37 @@
+/** @format */
+
+:root {
+  --poppin-font: "Poppins";
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 20px;
+  --font-size-medium-large: 22px;
+  --font-size-xs-large: 24px;
+  --font-size-xs-small: 12px;
+  --root-bg: #f4f7fe;
+
+  /* Auth (Horizon UI) palette */
+  --auth-navy: #2b3674;
+  --auth-grey: #a3aed0;
+  --auth-grey-700: #707eae;
+  --auth-primary: #4318ff;
+  --auth-border: #e0e5f2;
+  --auth-light: #f4f7fe;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: var(--poppin-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.flexbox-container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}

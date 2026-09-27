@@ -1,0 +1,105 @@
+/** @format */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .auth-page .auth-left {
+    padding: 32px 24px;
+  }
+  .auth-page .auth-title {
+    font-size: 28px;
+  }
+  .hide-layout {
+    display: none;
+  }
+  .header .fa-bars-staggered {
+    display: block;
+  }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .dashboard-card {
+    max-width: 100%;
+  }
+  .update-profile-section form .multiple-inputs {
+    flex-direction: column;
+  }
+  .update-profile-section form .multiple-inputs .input-div {
+    width: 100%;
+  }
+  .update-profile-section {
+    padding: 20px;
+  }
+  .layout-wrapper .layout-content {
+    width: 100%;
+  }
+  table thead tr th,
+  table tbody tr td,
+  .table-layout .filter-section .content .search-container input,
+  .table-layout .filter-section .content select,
+  .pagination button,
+  .create-btn,
+  .user-profile-section .edit-section ul li,
+  .user-profile-section .edit-section p.sub-heading,
+  .user-profile-section .edit-section .btn-container button,
+  .user-profile-section .remaining .filter-section .search-container input,
+  .user-profile-section .remaining .filter-section select,
+  .update-profile-section .update-img .content p.tag,
+  .update-profile-section .update-img .content button.update,
+  .update-profile-section form .input-div p,
+  .update-profile-section form .input-div input,
+  .update-profile-section form .input-div textarea,
+  .update-profile-section form .submit-btn,
+  .update-profile-section form .input-div select,
+  .css-1jqq78o-placeholder,
+  .friend-request-data-container .head .search-container input ,
+  .request-box .content p.title ,
+  .request-box .content p.date ,
+  .request-box .action-btn button.view ,
+  .terms-condition-container .value-container p.label ,
+  .terms-condition-container .value-container p.value{
+    font-size: var(--font-size-xs-small);
+  }
+  .section-heading,
+  .update-profile-section .update-img .content h4 {
+    font-size: var(--font-size-medium);
+  }
+  .table-heading,
+  .user-profile-section .edit-section p.heading,
+  .friend-request-data-container .head p.heading {
+    font-size: var(--font-size-small);
+  }
+  .table-actions i,
+  .user-profile-section .remaining .photos-collection .actions .icon i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: var(--font-size-xs-small);
+  }
+  .user-profile-section .edit-section {
+    margin: auto;
+  }
+  .user-profile-section .edit-section .img-container img,
+  .update-profile-section .update-img img {
+    width: 80px;
+    height: 80px;
+  }
+  .user-profile-section .remaining .photos-collection,
+  .update-user-post .update-profile-section .update-img img {
+    width: 160px;
+  }
+  .update-profile-section .update-img {
+    gap: 20px;
+  }
+  .request-box{
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .friend-request-data-container .head .search-container{
+    max-width: 100%;
+    width: 100%;
+  }
+  .edit-help-support-mod .flexbox-container .input-div{
+    width: 100%;
+  }
+}
