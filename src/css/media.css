@@ -2,11 +2,25 @@
 
 /* Tablets (768px and below) */
 @media (max-width: 768px) {
+  /* Auth page — single column */
+  .auth-page {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .auth-page .auth-right {
+    display: none !important;
+  }
   .auth-page .auth-left {
-    padding: 32px 24px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 24px;
+    flex: unset;
+  }
+  .auth-page .auth-form-wrap {
+    max-width: 100%;
   }
   .auth-page .auth-title {
-    font-size: 28px;
+    font-size: 26px;
   }
   .hide-layout {
     display: none;
