@@ -3,7 +3,7 @@
 import axios from "axios";
 import { Store } from "react-notifications-component";
 
-const Baseurl = process.env.React_App_Baseurl;
+const Baseurl = process.env.REACT_APP_BASEURL;
 const errorMessage = "Something went wrong !";
 
 export const showMsg = (title, message, type) => {
