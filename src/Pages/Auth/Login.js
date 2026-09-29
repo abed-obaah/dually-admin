@@ -94,16 +94,16 @@ const Login = () => {
           </button>
 
           <p className="auth-footer">
-            © {new Date().getFullYear()} Mr Duality. All Rights Reserved.
+            © {new Date().getFullYear()} Dually. All Rights Reserved.
           </p>
         </form>
       </div>
 
       <div className="auth-right hide-layout">
         <div className="auth-brand-badge">
-          <img src={horizontalLogo} alt="Mr Duality" />
+          <img src={horizontalLogo} alt="Dually" />
         </div>
-        <p className="auth-brand-title">Mr Duality</p>
+        <p className="auth-brand-title">Dually</p>
         <p className="auth-brand-sub">Admin Panel</p>
       </div>
     </section>

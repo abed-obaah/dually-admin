@@ -195,9 +195,9 @@ const ForgetPassword = () => {
 
       <div className="auth-right hide-layout">
         <div className="auth-brand-badge">
-          <img src={horizontalLogo} alt="Mr Duality" />
+          <img src={horizontalLogo} alt="Dually" />
         </div>
-        <p className="auth-brand-title">Mr Duality</p>
+        <p className="auth-brand-title">Dually</p>
         <p className="auth-brand-sub">Admin Panel</p>
       </div>
     </section>
